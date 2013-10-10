@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C018F821701EB28004FC6CE /* PajekOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C018F801701EB28004FC6CE /* PajekOutput.cpp */; };
+		5C09A3AE16F9A96E004D67BF /* ClusterEditingOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A3AC16F9A96E004D67BF /* ClusterEditingOutput.cpp */; };
+		5C09A3B416F9EC8F004D67BF /* XGMMLOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A3B216F9EC8F004D67BF /* XGMMLOutput.cpp */; };
+		5C1A29FD16ADBA3F00259BDE /* Globals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C1A29F816ADBA3F00259BDE /* Globals.cpp */; };
+		5C1A29FE16ADBA3F00259BDE /* yoshiko_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C1A29F916ADBA3F00259BDE /* yoshiko_main.cpp */; };
+		5C1A29FF16ADBA3F00259BDE /* ParameterDependentReductionRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C1A29FA16ADBA3F00259BDE /* ParameterDependentReductionRule.cpp */; };
+		5C1A2A0016ADBA3F00259BDE /* ParameterizedInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C1A29FB16ADBA3F00259BDE /* ParameterizedInstance.cpp */; };
+		5C1A2A0116ADBA3F00259BDE /* WorkingCopyInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C1A29FC16ADBA3F00259BDE /* WorkingCopyInstance.cpp */; };
+		5C35C20F163AC351000A81A3 /* InducedCostsHeuristic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C35C20D163AC351000A81A3 /* InducedCostsHeuristic.cpp */; };
+		5C706E9A16B154D100877F17 /* Delta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C706E9816B154D100877F17 /* Delta.cpp */; };
+		5C72A1D3165BE75D00EA827D /* CliqueRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C72A1D1165BE75D00EA827D /* CliqueRule.cpp */; };
+		5CAAC5EA161ABA8B00FD0D7B /* AlmostCliqueRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CAAC5DD161ABA8B00FD0D7B /* AlmostCliqueRule.cpp */; };
+		5CAAC5EB161ABA8B00FD0D7B /* ClusterEditingInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CAAC5DE161ABA8B00FD0D7B /* ClusterEditingInstance.cpp */; };
+		5CAAC5EC161ABA8B00FD0D7B /* DynProgTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CAAC5DF161ABA8B00FD0D7B /* DynProgTable.cpp */; };
+		5CAAC5ED161ABA8B00FD0D7B /* FPTReductionRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CAAC5E0161ABA8B00FD0D7B /* FPTReductionRule.cpp */; };
+		5CAAC5EE161ABA8B00FD0D7B /* HeavyEdgeRule3in1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CAAC5E1161ABA8B00FD0D7B /* HeavyEdgeRule3in1.cpp */; };
+		5CAAC5F0161ABA8B00FD0D7B /* MergingRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CAAC5E3161ABA8B00FD0D7B /* MergingRule.cpp */; };
+		5CAAC5F1161ABA8B00FD0D7B /* SimilarNeighboorhoodRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CAAC5E4161ABA8B00FD0D7B /* SimilarNeighboorhoodRule.cpp */; };
+		5CAAC5F2161ABA8B00FD0D7B /* CriticalCliqueRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CAAC5E5161ABA8B00FD0D7B /* CriticalCliqueRule.cpp */; };
+		5CC465D21658EB830009A8ED /* ClusterEditingReduction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CC465D01658EB820009A8ED /* ClusterEditingReduction.cpp */; };
+		5CE02E78165CE0C400C2B636 /* Yoshiko.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CE02E76165CE0C400C2B636 /* Yoshiko.cpp */; };
+		5CE02F04165D13C100C2B636 /* ClusterEditingSolutions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CE02F02165D13C100C2B636 /* ClusterEditingSolutions.cpp */; };
+		5CE02F0A165D1EA200C2B636 /* Helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CE02F08165D1EA200C2B636 /* Helpers.cpp */; };
+		5CE8FC7D16FB261A0045F9FB /* GMLOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CE8FC7B16FB261A0045F9FB /* GMLOutput.cpp */; };
+		5CE8FC8016FB38410045F9FB /* NullOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CE8FC7E16FB38410045F9FB /* NullOutput.cpp */; };
+		5CE8FC8316FB3EB20045F9FB /* TableOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CE8FC8116FB3EB20045F9FB /* TableOutput.cpp */; };
+		5CE8FC8616FB408D0045F9FB /* CSVOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CE8FC8416FB408D0045F9FB /* CSVOutput.cpp */; };
+		5CFA3E1816A1EB9A0098D93B /* ClusterReductionInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CFA3E1616A1EB9A0098D93B /* ClusterReductionInstance.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C5B0425161AB8360067072D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5C018F801701EB28004FC6CE /* PajekOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PajekOutput.cpp; sourceTree = "<group>"; };
+		5C018F811701EB28004FC6CE /* PajekOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PajekOutput.h; sourceTree = "<group>"; };
+		5C09A3AC16F9A96E004D67BF /* ClusterEditingOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClusterEditingOutput.cpp; sourceTree = "<group>"; };
+		5C09A3AD16F9A96E004D67BF /* ClusterEditingOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterEditingOutput.h; sourceTree = "<group>"; };
+		5C09A3B216F9EC8F004D67BF /* XGMMLOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XGMMLOutput.cpp; sourceTree = "<group>"; };
+		5C09A3B316F9EC8F004D67BF /* XGMMLOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGMMLOutput.h; sourceTree = "<group>"; };
+		5C1A29F616ADBA3F00259BDE /* ParameterizedInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParameterizedInstance.h; sourceTree = "<group>"; };
+		5C1A29F716ADBA3F00259BDE /* WorkingCopyInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkingCopyInstance.h; sourceTree = "<group>"; };
+		5C1A29F816ADBA3F00259BDE /* Globals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Globals.cpp; sourceTree = "<group>"; };
+		5C1A29F916ADBA3F00259BDE /* yoshiko_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = yoshiko_main.cpp; sourceTree = "<group>"; };
+		5C1A29FA16ADBA3F00259BDE /* ParameterDependentReductionRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParameterDependentReductionRule.cpp; sourceTree = "<group>"; };
+		5C1A29FB16ADBA3F00259BDE /* ParameterizedInstance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParameterizedInstance.cpp; sourceTree = "<group>"; };
+		5C1A29FC16ADBA3F00259BDE /* WorkingCopyInstance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WorkingCopyInstance.cpp; sourceTree = "<group>"; };
+		5C35C20D163AC351000A81A3 /* InducedCostsHeuristic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InducedCostsHeuristic.cpp; sourceTree = "<group>"; };
+		5C35C20E163AC351000A81A3 /* InducedCostsHeuristic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InducedCostsHeuristic.h; sourceTree = "<group>"; };
+		5C38E36D1672962C004A3939 /* cbc-to-jena.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = "cbc-to-jena.r"; sourceTree = "<group>"; };
+		5C40B1181632D96500B46250 /* ParameterDependentReductionRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParameterDependentReductionRule.h; sourceTree = "<group>"; };
+		5C5B0427161AB8360067072D /* yoshiko2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = yoshiko2; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C706E9816B154D100877F17 /* Delta.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Delta.cpp; sourceTree = "<group>"; };
+		5C706E9916B154D100877F17 /* Delta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Delta.h; sourceTree = "<group>"; };
+		5C72A1D1165BE75D00EA827D /* CliqueRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CliqueRule.cpp; sourceTree = "<group>"; };
+		5C72A1D2165BE75D00EA827D /* CliqueRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CliqueRule.h; sourceTree = "<group>"; };
+		5CAAC5D4161ABA8B00FD0D7B /* AlmostCliqueRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlmostCliqueRule.h; sourceTree = "<group>"; };
+		5CAAC5D5161ABA8B00FD0D7B /* ClusterEditingInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterEditingInstance.h; sourceTree = "<group>"; };
+		5CAAC5D6161ABA8B00FD0D7B /* DynProgTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynProgTable.h; sourceTree = "<group>"; };
+		5CAAC5D7161ABA8B00FD0D7B /* FPTReductionRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPTReductionRule.h; sourceTree = "<group>"; };
+		5CAAC5D8161ABA8B00FD0D7B /* HeavyEdgeRule3in1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeavyEdgeRule3in1.h; sourceTree = "<group>"; };
+		5CAAC5D9161ABA8B00FD0D7B /* MergingRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergingRule.h; sourceTree = "<group>"; };
+		5CAAC5DA161ABA8B00FD0D7B /* SimilarNeighboorhoodRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimilarNeighboorhoodRule.h; sourceTree = "<group>"; };
+		5CAAC5DB161ABA8B00FD0D7B /* CriticalCliqueRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CriticalCliqueRule.h; sourceTree = "<group>"; };
+		5CAAC5DD161ABA8B00FD0D7B /* AlmostCliqueRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AlmostCliqueRule.cpp; sourceTree = "<group>"; };
+		5CAAC5DE161ABA8B00FD0D7B /* ClusterEditingInstance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClusterEditingInstance.cpp; sourceTree = "<group>"; };
+		5CAAC5DF161ABA8B00FD0D7B /* DynProgTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DynProgTable.cpp; sourceTree = "<group>"; };
+		5CAAC5E0161ABA8B00FD0D7B /* FPTReductionRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FPTReductionRule.cpp; sourceTree = "<group>"; };
+		5CAAC5E1161ABA8B00FD0D7B /* HeavyEdgeRule3in1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeavyEdgeRule3in1.cpp; sourceTree = "<group>"; };
+		5CAAC5E3161ABA8B00FD0D7B /* MergingRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MergingRule.cpp; sourceTree = "<group>"; };
+		5CAAC5E4161ABA8B00FD0D7B /* SimilarNeighboorhoodRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimilarNeighboorhoodRule.cpp; sourceTree = "<group>"; };
+		5CAAC5E5161ABA8B00FD0D7B /* CriticalCliqueRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CriticalCliqueRule.cpp; sourceTree = "<group>"; };
+		5CAAC5E8161ABA8B00FD0D7B /* graph_test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = graph_test.txt; sourceTree = "<group>"; };
+		5CAAC5E9161ABA8B00FD0D7B /* jena_mini.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jena_mini.txt; sourceTree = "<group>"; };
+		5CC465D01658EB820009A8ED /* ClusterEditingReduction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClusterEditingReduction.cpp; sourceTree = "<group>"; };
+		5CC465D11658EB820009A8ED /* ClusterEditingReduction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterEditingReduction.h; sourceTree = "<group>"; };
+		5CE02E76165CE0C400C2B636 /* Yoshiko.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Yoshiko.cpp; sourceTree = "<group>"; };
+		5CE02E77165CE0C400C2B636 /* Yoshiko.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Yoshiko.h; sourceTree = "<group>"; };
+		5CE02F02165D13C100C2B636 /* ClusterEditingSolutions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClusterEditingSolutions.cpp; sourceTree = "<group>"; };
+		5CE02F03165D13C100C2B636 /* ClusterEditingSolutions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterEditingSolutions.h; sourceTree = "<group>"; };
+		5CE02F06165D1E8200C2B636 /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		5CE02F08165D1EA200C2B636 /* Helpers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Helpers.cpp; sourceTree = "<group>"; };
+		5CE02F09165D1EA200C2B636 /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
+		5CE8FC7B16FB261A0045F9FB /* GMLOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GMLOutput.cpp; sourceTree = "<group>"; };
+		5CE8FC7C16FB261A0045F9FB /* GMLOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMLOutput.h; sourceTree = "<group>"; };
+		5CE8FC7E16FB38410045F9FB /* NullOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NullOutput.cpp; sourceTree = "<group>"; };
+		5CE8FC7F16FB38410045F9FB /* NullOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NullOutput.h; sourceTree = "<group>"; };
+		5CE8FC8116FB3EB20045F9FB /* TableOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TableOutput.cpp; sourceTree = "<group>"; };
+		5CE8FC8216FB3EB20045F9FB /* TableOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableOutput.h; sourceTree = "<group>"; };
+		5CE8FC8416FB408D0045F9FB /* CSVOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSVOutput.cpp; sourceTree = "<group>"; };
+		5CE8FC8516FB408D0045F9FB /* CSVOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVOutput.h; sourceTree = "<group>"; };
+		5CF9A8551645EB6B00B8FF7E /* graph_1.cm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = graph_1.cm; sourceTree = "<group>"; };
+		5CF9A8561645EB6B00B8FF7E /* graph_4.cm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = graph_4.cm; sourceTree = "<group>"; };
+		5CF9A8571645EB6B00B8FF7E /* graph_5.cm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = graph_5.cm; sourceTree = "<group>"; };
+		5CF9A8581645EB6B00B8FF7E /* graph_13.cm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = graph_13.cm; sourceTree = "<group>"; };
+		5CF9A8591645EB6B00B8FF7E /* graph_15.cm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = graph_15.cm; sourceTree = "<group>"; };
+		5CF9A85A1645EB6B00B8FF7E /* graph_299.cm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = graph_299.cm; sourceTree = "<group>"; };
+		5CF9A85B1645EB6B00B8FF7E /* graph_2602.cm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = graph_2602.cm; sourceTree = "<group>"; };
+		5CF9A85C1645EB6B00B8FF7E /* graph_test_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = graph_test_2.txt; sourceTree = "<group>"; };
+		5CF9A85D1645EB6B00B8FF7E /* graph_test_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = graph_test_3.txt; sourceTree = "<group>"; };
+		5CF9A85E1645EB6B00B8FF7E /* graph_test_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = graph_test_4.txt; sourceTree = "<group>"; };
+		5CF9A85F1645EB6C00B8FF7E /* graph_Vred_500_krest_2992_c_3000_Vorg_500_korg_2992_lb_2868_ub_3306_nr_0.cm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = graph_Vred_500_krest_2992_c_3000_Vorg_500_korg_2992_lb_2868_ub_3306_nr_0.cm; sourceTree = "<group>"; };
+		5CFA3E1616A1EB9A0098D93B /* ClusterReductionInstance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClusterReductionInstance.cpp; sourceTree = "<group>"; };
+		5CFA3E1716A1EB9A0098D93B /* ClusterReductionInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterReductionInstance.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C5B0424161AB8360067072D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C5B041C161AB8360067072D = {
+			isa = PBXGroup;
+			children = (
+				5C018F801701EB28004FC6CE /* PajekOutput.cpp */,
+				5C018F811701EB28004FC6CE /* PajekOutput.h */,
+				5CE8FC8416FB408D0045F9FB /* CSVOutput.cpp */,
+				5CE8FC8516FB408D0045F9FB /* CSVOutput.h */,
+				5CE8FC8116FB3EB20045F9FB /* TableOutput.cpp */,
+				5CE8FC8216FB3EB20045F9FB /* TableOutput.h */,
+				5CE8FC7E16FB38410045F9FB /* NullOutput.cpp */,
+				5CE8FC7F16FB38410045F9FB /* NullOutput.h */,
+				5CE8FC7B16FB261A0045F9FB /* GMLOutput.cpp */,
+				5CE8FC7C16FB261A0045F9FB /* GMLOutput.h */,
+				5C09A3B216F9EC8F004D67BF /* XGMMLOutput.cpp */,
+				5C09A3B316F9EC8F004D67BF /* XGMMLOutput.h */,
+				5CAAC5DD161ABA8B00FD0D7B /* AlmostCliqueRule.cpp */,
+				5CAAC5D4161ABA8B00FD0D7B /* AlmostCliqueRule.h */,
+				5C72A1D1165BE75D00EA827D /* CliqueRule.cpp */,
+				5C72A1D2165BE75D00EA827D /* CliqueRule.h */,
+				5CAAC5DE161ABA8B00FD0D7B /* ClusterEditingInstance.cpp */,
+				5CAAC5D5161ABA8B00FD0D7B /* ClusterEditingInstance.h */,
+				5C09A3AC16F9A96E004D67BF /* ClusterEditingOutput.cpp */,
+				5C09A3AD16F9A96E004D67BF /* ClusterEditingOutput.h */,
+				5CC465D01658EB820009A8ED /* ClusterEditingReduction.cpp */,
+				5CC465D11658EB820009A8ED /* ClusterEditingReduction.h */,
+				5CE02F02165D13C100C2B636 /* ClusterEditingSolutions.cpp */,
+				5CE02F03165D13C100C2B636 /* ClusterEditingSolutions.h */,
+				5CFA3E1616A1EB9A0098D93B /* ClusterReductionInstance.cpp */,
+				5CFA3E1716A1EB9A0098D93B /* ClusterReductionInstance.h */,
+				5CAAC5E5161ABA8B00FD0D7B /* CriticalCliqueRule.cpp */,
+				5CAAC5DB161ABA8B00FD0D7B /* CriticalCliqueRule.h */,
+				5C706E9816B154D100877F17 /* Delta.cpp */,
+				5C706E9916B154D100877F17 /* Delta.h */,
+				5CAAC5DF161ABA8B00FD0D7B /* DynProgTable.cpp */,
+				5CAAC5D6161ABA8B00FD0D7B /* DynProgTable.h */,
+				5CAAC5E0161ABA8B00FD0D7B /* FPTReductionRule.cpp */,
+				5CAAC5D7161ABA8B00FD0D7B /* FPTReductionRule.h */,
+				5C1A29F816ADBA3F00259BDE /* Globals.cpp */,
+				5CE02F06165D1E8200C2B636 /* Globals.h */,
+				5CAAC5E1161ABA8B00FD0D7B /* HeavyEdgeRule3in1.cpp */,
+				5CAAC5D8161ABA8B00FD0D7B /* HeavyEdgeRule3in1.h */,
+				5CE02F08165D1EA200C2B636 /* Helpers.cpp */,
+				5CE02F09165D1EA200C2B636 /* Helpers.h */,
+				5C35C20D163AC351000A81A3 /* InducedCostsHeuristic.cpp */,
+				5C35C20E163AC351000A81A3 /* InducedCostsHeuristic.h */,
+				5CAAC5E3161ABA8B00FD0D7B /* MergingRule.cpp */,
+				5CAAC5D9161ABA8B00FD0D7B /* MergingRule.h */,
+				5C1A29FA16ADBA3F00259BDE /* ParameterDependentReductionRule.cpp */,
+				5C40B1181632D96500B46250 /* ParameterDependentReductionRule.h */,
+				5C1A29FB16ADBA3F00259BDE /* ParameterizedInstance.cpp */,
+				5C1A29F616ADBA3F00259BDE /* ParameterizedInstance.h */,
+				5CAAC5E4161ABA8B00FD0D7B /* SimilarNeighboorhoodRule.cpp */,
+				5CAAC5DA161ABA8B00FD0D7B /* SimilarNeighboorhoodRule.h */,
+				5C1A29FC16ADBA3F00259BDE /* WorkingCopyInstance.cpp */,
+				5C1A29F716ADBA3F00259BDE /* WorkingCopyInstance.h */,
+				5CE02E76165CE0C400C2B636 /* Yoshiko.cpp */,
+				5CE02E77165CE0C400C2B636 /* Yoshiko.h */,
+				5C1A29F916ADBA3F00259BDE /* yoshiko_main.cpp */,
+				5C5B0428161AB8360067072D /* Products */,
+				5C38E36D1672962C004A3939 /* cbc-to-jena.r */,
+				5CF9A8551645EB6B00B8FF7E /* graph_1.cm */,
+				5CF9A8581645EB6B00B8FF7E /* graph_13.cm */,
+				5CF9A8591645EB6B00B8FF7E /* graph_15.cm */,
+				5CF9A85B1645EB6B00B8FF7E /* graph_2602.cm */,
+				5CF9A85A1645EB6B00B8FF7E /* graph_299.cm */,
+				5CF9A8561645EB6B00B8FF7E /* graph_4.cm */,
+				5CF9A8571645EB6B00B8FF7E /* graph_5.cm */,
+				5CAAC5E8161ABA8B00FD0D7B /* graph_test.txt */,
+				5CF9A85C1645EB6B00B8FF7E /* graph_test_2.txt */,
+				5CF9A85D1645EB6B00B8FF7E /* graph_test_3.txt */,
+				5CF9A85E1645EB6B00B8FF7E /* graph_test_4.txt */,
+				5CF9A85F1645EB6C00B8FF7E /* graph_Vred_500_krest_2992_c_3000_Vorg_500_korg_2992_lb_2868_ub_3306_nr_0.cm */,
+				5CAAC5E9161ABA8B00FD0D7B /* jena_mini.txt */,
+			);
+			sourceTree = "<group>";
+		};
+		5C5B0428161AB8360067072D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C5B0427161AB8360067072D /* yoshiko2 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C5B0426161AB8360067072D /* yoshiko2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C5B0431161AB8360067072D /* Build configuration list for PBXNativeTarget "yoshiko2" */;
+			buildPhases = (
+				5C5B0423161AB8360067072D /* Sources */,
+				5C5B0424161AB8360067072D /* Frameworks */,
+				5C5B0425161AB8360067072D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yoshiko2;
+			productName = "lemon-first-steps";
+			productReference = 5C5B0427161AB8360067072D /* yoshiko2 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C5B041E161AB8360067072D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Emanuel Laude";
+			};
+			buildConfigurationList = 5C5B0421161AB8360067072D /* Build configuration list for PBXProject "yoshiko2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5C5B041C161AB8360067072D;
+			productRefGroup = 5C5B0428161AB8360067072D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C5B0426161AB8360067072D /* yoshiko2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C5B0423161AB8360067072D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CAAC5EA161ABA8B00FD0D7B /* AlmostCliqueRule.cpp in Sources */,
+				5CAAC5EB161ABA8B00FD0D7B /* ClusterEditingInstance.cpp in Sources */,
+				5CAAC5EC161ABA8B00FD0D7B /* DynProgTable.cpp in Sources */,
+				5CAAC5ED161ABA8B00FD0D7B /* FPTReductionRule.cpp in Sources */,
+				5CAAC5EE161ABA8B00FD0D7B /* HeavyEdgeRule3in1.cpp in Sources */,
+				5CAAC5F0161ABA8B00FD0D7B /* MergingRule.cpp in Sources */,
+				5CAAC5F1161ABA8B00FD0D7B /* SimilarNeighboorhoodRule.cpp in Sources */,
+				5CAAC5F2161ABA8B00FD0D7B /* CriticalCliqueRule.cpp in Sources */,
+				5C35C20F163AC351000A81A3 /* InducedCostsHeuristic.cpp in Sources */,
+				5CC465D21658EB830009A8ED /* ClusterEditingReduction.cpp in Sources */,
+				5C72A1D3165BE75D00EA827D /* CliqueRule.cpp in Sources */,
+				5CE02E78165CE0C400C2B636 /* Yoshiko.cpp in Sources */,
+				5CE02F04165D13C100C2B636 /* ClusterEditingSolutions.cpp in Sources */,
+				5CE02F0A165D1EA200C2B636 /* Helpers.cpp in Sources */,
+				5CFA3E1816A1EB9A0098D93B /* ClusterReductionInstance.cpp in Sources */,
+				5C1A29FD16ADBA3F00259BDE /* Globals.cpp in Sources */,
+				5C1A29FE16ADBA3F00259BDE /* yoshiko_main.cpp in Sources */,
+				5C1A29FF16ADBA3F00259BDE /* ParameterDependentReductionRule.cpp in Sources */,
+				5C1A2A0016ADBA3F00259BDE /* ParameterizedInstance.cpp in Sources */,
+				5C1A2A0116ADBA3F00259BDE /* WorkingCopyInstance.cpp in Sources */,
+				5C706E9A16B154D100877F17 /* Delta.cpp in Sources */,
+				5C09A3AE16F9A96E004D67BF /* ClusterEditingOutput.cpp in Sources */,
+				5C09A3B416F9EC8F004D67BF /* XGMMLOutput.cpp in Sources */,
+				5CE8FC7D16FB261A0045F9FB /* GMLOutput.cpp in Sources */,
+				5CE8FC8016FB38410045F9FB /* NullOutput.cpp in Sources */,
+				5CE8FC8316FB3EB20045F9FB /* TableOutput.cpp in Sources */,
+				5CE8FC8616FB408D0045F9FB /* CSVOutput.cpp in Sources */,
+				5C018F821701EB28004FC6CE /* PajekOutput.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5C5B042F161AB8360067072D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5C5B0430161AB8360067072D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5C5B0432161AB8360067072D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/emanuellaude/Applications/IBM/ILOG/CPLEX_Studio125/concert/include,
+					/Users/emanuellaude/Applications/IBM/ILOG/CPLEX_Studio125/cplex/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"/Users/emanuellaude/Applications/IBM/ILOG/CPLEX_Studio125/concert/lib/x86-64_darwin9_gcc4.0/static_pic/",
+					"/Users/emanuellaude/Applications/IBM/ILOG/CPLEX_Studio125/cplex/lib/x86-64_darwin9_gcc4.0/static_pic",
+				);
+				MACH_O_TYPE = mh_execute;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DIL_STD",
+					"-Wall",
+					"-Wextra",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wno-unknown-pragmas",
+					"-O3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wno_compact_unwind",
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					IOKit,
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libemon.a,
+					"/Users/emanuellaude/Applications/IBM/ILOG/CPLEX_Studio125/cplex/lib/x86-64_darwin/static_pic/libilocplex.a",
+					"/Users/emanuellaude/Applications/IBM/ILOG/CPLEX_Studio125/cplex/lib/x86-64_darwin/static_pic/libcplex.a",
+					"/Users/emanuellaude/Applications/IBM/ILOG/CPLEX_Studio125/concert/lib/x86-64_darwin/static_pic/libconcert.a",
+				);
+				PRELINK_LIBS = "";
+				PRODUCT_NAME = yoshiko2;
+			};
+			name = Debug;
+		};
+		5C5B0433161AB8360067072D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COPY_PHASE_STRIP = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/emanuellaude/Applications/IBM/ILOG/CPLEX_Studio125/concert/include,
+					/Users/emanuellaude/Applications/IBM/ILOG/CPLEX_Studio125/cplex/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"/Users/emanuellaude/Applications/IBM/ILOG/CPLEX_Studio125/concert/lib/x86-64_darwin9_gcc4.0/static_pic/",
+					"/Users/emanuellaude/Applications/IBM/ILOG/CPLEX_Studio125/cplex/lib/x86-64_darwin9_gcc4.0/static_pic",
+				);
+				MACH_O_TYPE = mh_execute;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DIL_STD",
+					"-Wall",
+					"-Wextra",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wno-unknown-pragmas",
+					"-O3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wno_compact_unwind",
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					IOKit,
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libemon.a,
+					"/Users/emanuellaude/Applications/IBM/ILOG/CPLEX_Studio125/cplex/lib/x86-64_darwin/static_pic/libilocplex.a",
+					"/Users/emanuellaude/Applications/IBM/ILOG/CPLEX_Studio125/cplex/lib/x86-64_darwin/static_pic/libcplex.a",
+					"/Users/emanuellaude/Applications/IBM/ILOG/CPLEX_Studio125/concert/lib/x86-64_darwin/static_pic/libconcert.a",
+				);
+				PRELINK_LIBS = "";
+				PRODUCT_NAME = yoshiko2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C5B0421161AB8360067072D /* Build configuration list for PBXProject "yoshiko2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C5B042F161AB8360067072D /* Debug */,
+				5C5B0430161AB8360067072D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C5B0431161AB8360067072D /* Build configuration list for PBXNativeTarget "yoshiko2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C5B0432161AB8360067072D /* Debug */,
+				5C5B0433161AB8360067072D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C5B041E161AB8360067072D /* Project object */;
+}
